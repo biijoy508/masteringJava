@@ -1,5 +1,8 @@
 package constructorReuse;
 
+/**
+ * you are doomed
+ */
 public class ReuseMe {
 
     private static String name;
@@ -16,13 +19,14 @@ public class ReuseMe {
     }
 
     /**
-     * constructor(blah, blah, blah)
+     * constructor(blah, blah, blah) using varaarg
      *@param objects
      */
     public ReuseMe(final Object...objects ){
       for(Object c : objects){
         System.out.println(c.getClass().getTypeName());
       }
+
     }
 
 }
